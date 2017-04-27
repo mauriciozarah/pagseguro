@@ -1,10 +1,10 @@
 <?php
 
 class PagSeguro{
-	private static $email         = "mzaha@hotmail.com"; //SEU EMAIL USADO NO CADASTRO DO PAGSEGURO";
-	private static $token_sandbox = "C8065E6BA99C4011A91CB2E6B31FF750";
-	private static $token_oficial = "C8065E6BA99C4011A91CB2E6B31FF750";
-	private static $url_retorno   = "http://www.wma-stand.com/pagseguro_teste/notificacao.php";
+	private static $email         = "seu-email-do-pagseguro"; //SEU EMAIL USADO NO CADASTRO DO PAGSEGURO";
+	private static $token_sandbox = "seu-token-oficial-do-pagseguro";
+	private static $token_oficial = "seu-token-oficial-do-pagseguro";
+	private static $url_retorno   = "seu endereco de retorno";
 	
 	//URL OFICIAL
 	//COMENTE AS 4 LINHAS ABAIXO E DESCOMENTE AS URLS DA SANDBOX PARA REALIZAR TESTES
@@ -95,10 +95,10 @@ class PagSeguro{
 		$data['shippingAddressState']      = strtoupper($dados['estado']);
 		$data['shippingAddressCountry']    = 'BRA';
 		$data['redirectURL']               = $retorno;
-		$data['notificationURL']           = "http://www.wma-stand.com/pagseguro_teste/notificacao.php";
+		$data['notificationURL']           = "url-para-notificacao-pagseguro";
 
 
-		return http_build_query($data);
+		no http_build_query($data);
 	}
 	
 	public static function executeCheckout($dados,$retorno){
