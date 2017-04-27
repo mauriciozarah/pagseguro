@@ -1,0 +1,4 @@
+[29-Apr-2015 11:27:57] PHP Fatal error:  Call to undefined function  issset() in /home/wmaco071/public_html/application/views/contato.php on line 4
+[29-Apr-2015 11:28:24] PHP Fatal error:  Can't use method return value in write context in /home/wmaco071/public_html/application/views/contato.php on line 4
+[29-Apr-2015 11:33:37] PHP Fatal error:  Can't use method return value in write context in /home/wmaco071/public_html/application/controllers/contato.php on line 11
+[29-Apr-2015 11:36:51] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/wmaco071/public_html/application/controllers/contato.php on line 13
